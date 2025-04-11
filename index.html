@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Nosso Cantinho</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #ffb6c1;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .contador {
+      background: rgba(255, 255, 255, 0.05);
+      border: 3px solid;
+      border-image: linear-gradient(45deg, #ff69b4, #ffc0cb) 1;
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.3);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .contador h2 {
+      font-size: 1.5rem;
+      color: #ffb6c1;
+      margin-bottom: 1.5rem;
+    }
+
+    .contador-tempo {
+      display: flex;
+      gap: 1.2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .caixa-tempo {
+      background: linear-gradient(145deg, #ffb6c1, #ff69b4);
+      padding: 1rem 1.2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+      text-align: center;
+      min-width: 80px;
+      animation: pulse 2s infinite;
+    }
+
+    .valor {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 0 5px #ff69b4;
+    }
+
+    .legenda {
+      font-size: 0.9rem;
+      color: #fff0f5;
+      margin-top: 0.3rem;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .mensagem {
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 2rem;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mensagem span {
+      color: #ffb6c1;
+      font-weight: bold;
+    }
+
+    .mensagem em {
+      display: block;
+      margin-top: 1rem;
+      font-style: italic;
+      color: #dcdcdc;
+    }
+    .lugares-juntos {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+    .cards-lugares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    }
+
+    .card-lugar {
+    background: rgba(255, 255, 255, 0.07);
+    border: 2px solid rgba(255, 182, 193, 0.5);
+    border-radius: 15px;
+    padding: 0.8rem;
+    width: 250px;
+    font-size: 1rem;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+    color: #fff;
+    transition: transform 0.3s ease;
+    text-align: center;
+    }
+
+    .card-lugar img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
+    }
+
+    .card-lugar:hover {
+    transform: scale(1.05);
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+    .cards-lugares {
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Nosso Cantinho 💖</h1>
+
+  <div class="contador">
+    <h2>⏳ Tempo desde que tudo começou:</h2>
+    <div id="contador-tempo" class="contador-tempo">
+      <div class="caixa-tempo">
+        <div class="valor" id="dias">0</div>
+        <div class="legenda">Dias ❤️</div>
+      </div>
+      <div class="caixa-tempo">
+        <div class="valor" id="horas">0</div>
+        <div class="legenda">Horas ❤️</div>
+      </div>
+      <div class="caixa-tempo">
+        <div class="valor" id="minutos">0</div>
+        <div class="legenda">Minutos ❤️</div>
+      </div>
+      <div class="caixa-tempo">
+        <div class="valor" id="segundos">0</div>
+        <div class="legenda">Segundos ❤️</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mensagem">
+    Dia 02/04 o dia que eu encontrei o que procurei tanto mas nunca tinha achado, acho que agora eu sei o que é amar e o que é ser amado. Ultimamente só penso na gente, conto horas, minutos e dias para estar com você.  
+    <br><br>
+    Quem diria que a pessoa que eu mais iria me sentir bem era a que eu mais vivia enchendo o saco e carretando... agora eu entendo o que é amar e o que é ser amado.  
+    <br><br>
+    Realmente você não tem noção como eu te odeio... te odeio tanto por não ter entrado antes na minha vida e ter se tornado a mulher que sempre sonhei, minha morena do cabelo cacheado, minha princesa que por ti eu faço tudo.  
+    <br><br>
+    Às vezes acho que o maior presente da minha vida foi você...  
+    <em>
+      Aquela música do Jorge e Mateus diz muito sobre a gente:
+    </em>
+    <span>
+      "É que nos meus sonhos você é a linda<br>
+      Pessoalmente é mais linda ainda<br>
+      Nosso amor veio de outras vidas<br>
+      Eu vou te amar nas outras vidas que virão"
+    </span>
+    <br><br>
+    <span>
+      "É que você nasceu pra ser minha<br>
+      Vamos dividir uma casinha<br>
+      Uma cama, dormir de conchinha<br>
+      Deus abençoou a nossa união"
+    </span>
+    <br><br>
+    <em>
+      E como já dizia Charlie Brown Jr:
+    </em>
+    <span>
+      "Hoje estou feliz porque eu sonhei com você<br>
+      E amanhã posso chorar por não poder te ver<br>
+      Mas o seu sorriso vale mais que um diamante<br>
+      Se você vier comigo, aí nós vamos adiante<br>
+      Com a cabeça erguida e mantendo a fé em Deus<br>
+      O seu dia mais feliz vai ser o mesmo que o meu"
+    </span>
+    <br><br>
+    E sim, meu dia mais feliz é quando estou contigo.  
+    <br><br>
+    <strong style="font-size: 1.4rem; color: #ff69b4;">TE AMO ❤️</strong>
+  </div>
+
+  <div class="lugares-juntos">
+    <h2>Para quando moramos juntos🏡</h2>
+    <div class="cards-lugares">
+      <div class="card-lugar">
+        <img src="URL_DA_IMAGEM_1" alt="Lugar 1">
+        <p>🏠 </p>
+      </div>
+      <div class="card-lugar">
+        <img src="URL_DA_IMAGEM_2" alt="Lugar 2">
+        <p>🌇 </p>
+      </div>
+      <div class="card-lugar">
+        <img src="URL_DA_IMAGEM_3" alt="Lugar 3">
+        <p>🌲</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
+    function atualizarContador() {
+      const dataAlvo = new Date("2025-04-02T00:00:00");
+      const agora = new Date();
+      const diferenca = agora - dataAlvo;
+
+      const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diferenca / (1000 * 60 * 60)) % 24);
+      const minutos = Math.floor((diferenca / (1000 * 60)) % 60);
+      const segundos = Math.floor((diferenca / 1000) % 60);
+
+      document.getElementById("dias").textContent = dias;
+      document.getElementById("horas").textContent = horas;
+      document.getElementById("minutos").textContent = minutos;
+      document.getElementById("segundos").textContent = segundos;
+    }
+
+    setInterval(atualizarContador, 1000);
+    atualizarContador();
+  </script>
+</body>
+</html>
