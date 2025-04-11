@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Nosso Cantinho</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -22,7 +21,6 @@
       font-size: 2.5rem;
       margin-bottom: 2rem;
       color: #ffb6c1;
-      text-align: center;
       text-shadow: 2px 2px 5px #000;
     }
 
@@ -35,8 +33,6 @@
       padding: 2rem;
       margin-bottom: 2rem;
       text-align: center;
-      width: 100%;
-      max-width: 600px;
     }
 
     .contador h2 {
@@ -103,43 +99,52 @@
       font-style: italic;
       color: #dcdcdc;
     }
+    .lugares-juntos {
+  margin-top: 3rem;
+  text-align: center;
+}
 
-    /* --- RESPONSIVO --- */
-    @media (max-width: 600px) {
-      body {
-        padding: 1rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      .contador {
-        padding: 1.5rem;
-      }
-
-      .contador h2 {
-        font-size: 1.2rem;
-      }
-
-      .caixa-tempo {
-        padding: 0.8rem;
-        min-width: 70px;
-      }
-
-      .valor {
-        font-size: 1.6rem;
-      }
-
-      .legenda {
-        font-size: 0.8rem;
-      }
-
-      .mensagem {
-        padding: 1.2rem;
-        font-size: 1rem;
-      }
+    .cards-lugares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
     }
+
+    .card-lugar {
+    background: rgba(255, 255, 255, 0.07);
+    border: 2px solid rgba(255, 182, 193, 0.5);
+    border-radius: 15px;
+    padding: 0.8rem;
+    width: 250px;
+    font-size: 1rem;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+    color: #fff;
+    transition: transform 0.3s ease;
+    text-align: center;
+    }
+
+    .card-lugar img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
+    }
+
+    .card-lugar:hover {
+    transform: scale(1.05);
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+    .cards-lugares {
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+
   </style>
 </head>
 <body>
@@ -208,6 +213,25 @@
     <br><br>
     <strong style="font-size: 1.4rem; color: #ff69b4;">TE AMO ❤️</strong>
   </div>
+
+  <div class="lugares-juntos">
+    <h2>Para quando moramos juntos🏡</h2>
+    <div class="cards-lugares">
+      <div class="card-lugar">
+        <img src="URL_DA_IMAGEM_1" alt="Lugar 1">
+        <p>🏠 </p>
+      </div>
+      <div class="card-lugar">
+        <img src="URL_DA_IMAGEM_2" alt="Lugar 2">
+        <p>🌇 </p>
+      </div>
+      <div class="card-lugar">
+        <img src="URL_DA_IMAGEM_3" alt="Lugar 3">
+        <p>🌲</p>
+      </div>
+    </div>
+  </div>
+  
 
   <script>
     function atualizarContador() {
