@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Nosso Cantinho</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -21,6 +22,7 @@
       font-size: 2.5rem;
       margin-bottom: 2rem;
       color: #ffb6c1;
+      text-align: center;
       text-shadow: 2px 2px 5px #000;
     }
 
@@ -33,6 +35,8 @@
       padding: 2rem;
       margin-bottom: 2rem;
       text-align: center;
+      width: 100%;
+      max-width: 600px;
     }
 
     .contador h2 {
@@ -98,6 +102,43 @@
       margin-top: 1rem;
       font-style: italic;
       color: #dcdcdc;
+    }
+
+    /* --- RESPONSIVO --- */
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .contador {
+        padding: 1.5rem;
+      }
+
+      .contador h2 {
+        font-size: 1.2rem;
+      }
+
+      .caixa-tempo {
+        padding: 0.8rem;
+        min-width: 70px;
+      }
+
+      .valor {
+        font-size: 1.6rem;
+      }
+
+      .legenda {
+        font-size: 0.8rem;
+      }
+
+      .mensagem {
+        padding: 1.2rem;
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
